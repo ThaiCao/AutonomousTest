@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AutonomousTesting</string>
+
+    <!-- General errors -->
+    <string name="general_network_error_message">Something went wrong during server communication</string>
+    <string name="general_error_message">Something went wrong</string>
+    <string name="storage_error_message">Not found in the database</string>
+    <string name="memory_error_message">Not found in the memory</string>
+    <string name="unknown_error">Unknown error</string>
+
+    <string name="no_content">No content available</string>
+    <string name="weather_temperature">%s°C </string>
+    <string name="city_description">You are seeing the weather of: %s</string>
+</resources>

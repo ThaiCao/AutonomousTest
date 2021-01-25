@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorLightGrey">#f2f2f2</color>
+    <color name="colorWarmGrey">#999999</color>
+    <color name="colorDarkGrey">#666666</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="colorDivider">@color/colorWarmGrey</color>
+    <color name="colorBackgroundProgress">#20212121</color>
+
+<!--    <color name="background_weather_item_start">#f6ee19</color>
+    <color name="background_weather_item_end">#115ede</color> -->
+    <color name="background_weather_item_start">#0DFFF3</color>
+    <color name="background_weather_item_end">#00728d</color>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_weather_item"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="@dimen/padding_medium">
+
+    <ImageView
+        android:id="@+id/ivWeather"
+        android:layout_width="@dimen/weather_image_width_large"
+        android:layout_height="@dimen/weather_image_height_large"
+        android:contentDescription="@string/imageDesc"
+        android:src="@drawable/ic_weather"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/weather_image_height_large"
+        android:layout_marginStart="@dimen/margin_medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/ivWeather"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            tools:text="Monday" />
+
+        <TextView
+            android:id="@+id/tvTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_huge"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            tools:text="25°C" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/ivWeather"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@color/colorWhite"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/vDivider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_small">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            tools:text="01 January 2021" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@+id/tvDate"
+            android:layout_toEndOf="@+id/tvDate"
+            android:gravity="right"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            tools:text="Cloud" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
